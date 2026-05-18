@@ -47,6 +47,21 @@ AAC 64 kbps
 Small files, but visibly degraded (blurry, blocky).
 Useful for previews, low bandwidth, or storage saving.
 
+🔴 240p
+
+Goal: very aggressive compression
+
+Video
+CRF 26 → quite lossy
+Preset: slower
+Resolution: 240p
+Audio
+AAC 64 kbps
+
+👉 Result:
+Very small files, visibly degraded (blurry, blocky).
+Useful for previews, very low bandwidth, or storage saving.
+
 🟣 THUMBS
 
 Goal: tiny preview videos
