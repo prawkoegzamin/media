@@ -41,22 +41,46 @@
             border-top: 1px solid #eeeeee;
             padding-top: 20px;
         }
+        /* Styl dedykowany dla kontenera Google Translate */
+        #google_translate_element {
+            margin-bottom: 20px;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
 
+    <!-- Widget automatycznego tłumaczenia Google Translate (Opcja A) -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pl',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <h1>Polityka Prywatności aplikacji „PraEgz”</h1>
-    <p><strong>Ostatnia aktualizacja:</strong> 30 maja 2026 r.</p>
+    <p><strong>Ostatnia aktualizacja:</strong> 17 lipca 2026 r.</p>
 
     <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych użytkowników korzystających z aplikacji mobilnej <strong>PraEgz</strong> (zwanej dalej „Aplikacją”). Aplikacja jest przeznaczona do nauki i przygotowania do teoretycznego egzaminu państwowego na prawo jazdy.</p>
-    
+
     <p>Dokładamy wszelkich starań, aby szanować prywatność użytkowników. Aplikacja została zaprojektowana zgodnie z wymogami ogólnego rozporządzenia o ochronie danych (RODO / GDPR), przepisami polskiej ustawy o ochronie danych osobowych oraz standardami Google Play User Data Policy.</p>
 
     <h2>1. Administrator Danych</h2>
     <p>Aplikacja jest produktem niezależnym. W sprawach związanych z działaniem Aplikacji oraz niniejszą Polityką Prywatności można kontaktować się drogą elektroniczną (np. poprzez formularz kontaktowy lub adres e-mail wskazany w sklepie Google Play).</p>
 
-    <h2>2. Brak Gromadzenia Danych Osobowych przez Aplikację</h2>
-    <p>Aplikacja <strong>PraEgz sama z siebie nie gromadzi, nie rejestruje, nie przechowuje ani nie przesyła żadnych danych osobowych</strong> użytkownika (takich jak imię, nazwisko, adres e-mail, numer telefonu czy dokładna lokalizacja GPS) na zewnętrzne serwery Administratora. Wszelkie postępy w nauce, statystyki, historia sesji oraz udzielone odpowiedzi są zapisywane <strong>wyłącznie lokalnie</strong> w pamięci urządzenia użytkownika.</p>
+    <h2>2. Przetwarzanie Danych o Postępach i Anonimowe Statystyki</h2>
+    <p>Domyślnie wszelkie postępy w nauce, historia sesji egzaminacyjnych oraz udzielone odpowiedzi są zapisywane <strong>wyłącznie lokalnie</strong> w pamięci urządzenia użytkownika.</p>
+    <p>W celu ciągłego ulepszania bazy pytań oraz tworzenia ogólnodostępnej dla społeczności listy najtrudniejszych zagadnień (zakładka "Globalne statystyki"), Aplikacja oferuje opcjonalną funkcję współdzielenia statystyk. Działa ona na następujących zasadach:</p>
+    <ul>
+        <li><strong>Dobrowolność (Opt-in):</strong> Wysyłanie statystyk jest całkowicie opcjonalne. Uruchamia się wyłącznie po wyraźnej i świadomej zgodzie użytkownika udzielonej wewnątrz Aplikacji. Brak zgody w żaden sposób nie blokuje dostępu do funkcji Aplikacji (w tym do przeglądania globalnej listy).</li>
+        <li><strong>Pełna Anonimowość:</strong> Przesyłany raport zawiera wyłącznie techniczne identyfikatory pytań egzaminacyjnych, informacje o popełnionych błędach oraz ogólny wynik testu. Aplikacja nie łączy tych danych z Twoim imieniem, nazwiskiem, adresem e-mail, dokładną lokalizacją ani żadnym innym identyfikatorem pozwalającym na ustalenie Twojej tożsamości.</li>
+        <li><strong>Częstotliwość:</strong> Raport generowany i wysyłany jest automatycznie w tle raz na kilka dni (zazwyczaj co 3 dni), wyłącznie gdy urządzenie ma połączenie z siecią Internet.</li>
+        <li><strong>Możliwość wycofania zgody:</strong> Użytkownik może w każdej chwili włączyć lub wyłączyć przesyłanie anonimowych statystyk w ustawieniach Aplikacji. Wycofanie zgody powoduje natychmiastowe zaprzestanie wysyłania kolejnych raportów.</li>
+    </ul>
 
     <h2>3. Usługi i Podmioty Trzecie (Third-Party SDKs)</h2>
     <p>W celu umożliwienia bezpłatnego działania Aplikacji w modelu freemium oraz dystrybucji i poprawnego funkcjonowania, Aplikacja integruje zewnętrzne narzędzia dostarczane przez podmioty trzecie. Podmioty te mogą uzyskiwać dostęp do identyfikatorów urządzeń oraz danych technicznych w celach statystycznych lub reklamowych:</p>
